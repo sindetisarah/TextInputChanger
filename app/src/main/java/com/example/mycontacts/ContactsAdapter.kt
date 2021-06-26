@@ -14,11 +14,11 @@ class ContactsAdapter(var contactList: List<Contacts>) :RecyclerView.Adapter<Con
     }
 
     override fun onBindViewHolder(holder: ContactsViewHolder, position: Int) {
-        var currentCourse=contactList.get(position)
+        var currentContact=contactList.get(position)
         //set att to the view displayed.Bind the data to the views
-        holder.tvName.text=currentCourse.name
-        holder.tvPhoneNumber.text=currentCourse.phoneNumber
-        holder.tvEmail.text=currentCourse.email
+        holder.tvName.text=currentContact.name
+        holder.tvPhoneNumber.text=currentContact.phoneNumber
+        holder.tvEmail.text=currentContact.email
 
 
     }
